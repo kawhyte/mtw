@@ -8,7 +8,7 @@ function Hero() {
 					<img
 						className='lg:w-5/6 md:w-4/6 w-5/6 mb-10 object-cover object-center rounded'
 						alt='hero'
-						src='https://dummyimage.com/%201920x1200/000/fff'
+						src='https://images.pexels.com/photos/1154638/pexels-photo-1154638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 					/>
 					<div className='text-center lg:w-2/3 w-full'>
 						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>

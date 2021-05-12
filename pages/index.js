@@ -18,12 +18,14 @@ import { getAllPostsForHome } from '../lib/api'
 
 
 export default function Index({ allPosts, preview }) {
+
+  console.log("ALL POSTs", allPosts)
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
  // <Hero />
   return (
     <>
-      <Layout >
+      <Layout preview={preview}>
         <Head>
           <title>Meet the Whytes by {CMS_NAME}</title>
         </Head>

@@ -8,8 +8,19 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 
-export default function Index() {
 
+
+import MoreStories from '../components/more-stories'
+import HeroPost from '../components/hero-post'
+import Intro from '../components/intro'
+
+import { getAllPostsForHome } from '../lib/api'
+
+
+export default function Index({ allPosts, preview }) {
+  const heroPost = allPosts[0]
+  const morePosts = allPosts.slice(1)
+ // <Hero />
   return (
     <>
       <Layout >
@@ -17,12 +28,47 @@ export default function Index() {
           <title>Meet the Whytes by {CMS_NAME}</title>
         </Head>
         <Container>
-        <Hero />
+        <Intro />
+        {heroPost && (
+          <HeroPost
+            title={heroPost.title}
+            coverImage={heroPost.coverImage}
+            // date={heroPost.date}
+            // author={heroPost.author}
+            slug={heroPost.slug}
+            excerpt={heroPost.excerpt}
+          />
+        )}
         <Section />
         <Welcome />
+
+
+
+
+       
+        {heroPost && (
+          <HeroPost
+            title={heroPost.title}
+            coverImage={heroPost.coverImage}
+            date={heroPost.date}
+            author={heroPost.author}
+            slug={heroPost.slug}
+            excerpt={heroPost.excerpt}
+          />
+        )}
+        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
+
         </Container>
       </Layout>
     </>
   )
 }
 
+export async function getStaticProps({ preview = false }) {
+  const allPosts = await getAllPostsForHome(preview)
+  return {
+    props: { allPosts, preview },
+    revalidate: 1
+  }
+}

@@ -39,24 +39,36 @@ export default function Index({ allPosts, preview }) {
             excerpt={heroPost.excerpt}
           />
         )}
-        <Section />
+
+ {morePosts.length > 0 && 
+
+  morePosts.map((post) => {
+        <Section 
+        
+        key={post.slug}
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+            author={post.author}
+            slug={post.slug}
+            excerpt={post.excerpt}
+        
+        />  
+      
+      
+      } )}
+      
+      
+        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+      
         <Welcome />
 
 
 
 
        
-        {heroPost && (
-          <HeroPost
-            title={heroPost.title}
-            coverImage={heroPost.coverImage}
-            date={heroPost.date}
-            author={heroPost.author}
-            slug={heroPost.slug}
-            excerpt={heroPost.excerpt}
-          />
-        )}
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
+        
 
 
         </Container>

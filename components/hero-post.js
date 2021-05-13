@@ -18,7 +18,6 @@ export default function HeroPost({
 					<span class='px-4 py-2 mx-2 my-2  text-base rounded-full text-green-600  bg-green-200 absolute '>
 						Featured Post
 					</span>	
-          
           <div className=' absolute bottom-0 right-0  mx-2 my-1 '>
 						<h3 className='mb-8 text-4xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>

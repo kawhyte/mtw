@@ -13,7 +13,7 @@ const StarRating = () => {
 		});
 
 	return (
-		<div class='flex justify-center items-center'>
+		<div class='flex  justify-start items-center'>
 			<div class='flex items-center '>
 				{[...Array(maxHearts)].fill().map((_, index) => {
 					return (

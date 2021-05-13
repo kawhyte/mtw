@@ -8,9 +8,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
 	return (
 		<>
 			<PostTitle>{title}</PostTitle>
-			<div className=' block mb-2 text-lg'>
-				<StarRating />
-			</div>
+	
 			<div className='max-w-2xl flex flex-row  '>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -60,10 +58,14 @@ export default function PostHeader({ title, coverImage, date, author }) {
 					/>
 				</svg>
 
-				<div className=' text-gray-500 block ml-2   mb-6 md:mb-12 text-lg'>
+				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
 					<Date dateString={date} />
 				</div>
 			</div>
+
+      <div className=' block mt-2 text-lg  mb-6 md:mb-12'>
+      <StarRating />
+    </div>
 
 			<div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
 				<CoverImage title={title} imageObject={coverImage} url={coverImage} />

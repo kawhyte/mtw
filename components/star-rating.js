@@ -14,7 +14,8 @@ const StarRating = () => {
 		});
 
 	return (
-		<>
+		<>  
+        <div className="flex border-b "> 
 			<div class='flex  justify-start items-center align-top mb-8'>
 				<h1 className='text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 					3.5
@@ -28,7 +29,9 @@ const StarRating = () => {
 				</div>
 			</div>
 
-			<div className='my-5 border-b pb-4'>
+
+          
+			<div className='my-5 pb-4'>
 				<div className='flex flex-row'>
 					<Stars stars={5} />
 					<p className='mx-6'>Location</p>
@@ -46,7 +49,7 @@ const StarRating = () => {
 					<p className='mx-6'>Value</p>
 				</div>
 
-			
+                </div>
 			</div>
 		</>
 	);

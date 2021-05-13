@@ -7,12 +7,12 @@ import StarRating from "./star-rating";
 export default function PostHeader({ title, coverImage, date, author }) {
 	return (
 		<>
-    <div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
-    <CoverImage title={title} imageObject={coverImage} url={coverImage} />
-  </div>
+			<div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
+				<CoverImage title={title} imageObject={coverImage} url={coverImage} />
+			</div>
 			<PostTitle>{title}</PostTitle>
-	
-			<div className='max-w-2xl flex flex-row  '>
+
+			<div className='max-w-2xl flex flex-row '>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					className='h-6 w-6'
@@ -37,13 +37,22 @@ export default function PostHeader({ title, coverImage, date, author }) {
 				</div>
 			</div>
 			<div className='max-w-2xl flex flex-row '>
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-    </svg>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					className='h-6 w-6'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke='currentColor'>
+					<path
+						strokeLinecap='round'
+						strokeLinejoin='round'
+						strokeWidth={2}
+						d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
+					/>
+				</svg>
 
-    
 				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-					Visit Hotel Website 
+					Visit Hotel Website
 				</div>
 			</div>
 			<div className='max-w-2xl flex flex-row '>
@@ -66,11 +75,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
 				</div>
 			</div>
 
-      <div className=' block mt-2 text-lg  mb-6 md:mb-12'>
-      <StarRating />
-    </div>
-
-	
+			<div className=' block mt-2 text-lg  mb-6 md:mb-12'>
+				<StarRating />
+			</div>
 		</>
 	);
 }

@@ -7,6 +7,9 @@ import StarRating from "./star-rating";
 export default function PostHeader({ title, coverImage, date, author }) {
 	return (
 		<>
+    <div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
+    <CoverImage title={title} imageObject={coverImage} url={coverImage} />
+  </div>
 			<PostTitle>{title}</PostTitle>
 	
 			<div className='max-w-2xl flex flex-row  '>
@@ -67,9 +70,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
       <StarRating />
     </div>
 
-			<div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
-				<CoverImage title={title} imageObject={coverImage} url={coverImage} />
-			</div>
+	
 		</>
 	);
 }

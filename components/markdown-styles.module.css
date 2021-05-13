@@ -16,3 +16,9 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown img {
+
+  @apply w-3/4;
+    @apply h-3/4;
+}

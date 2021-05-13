@@ -10,6 +10,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
       <div className="hidden md:block md:mb-12">
         <Avatar name={author?.name} picture={author?.picture} />
       </div>
+      <div className=" hidden  md:block mb-6 text-lg">
+      <Date dateString={date} />
+    </div>
       <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
         <CoverImage title={title} imageObject={coverImage} url={coverImage} />
       </div>
@@ -17,9 +20,10 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <div className="block md:hidden mb-6">
           <Avatar name={author?.name} picture={author?.picture} />
         </div>
-        <div className="mb-6 text-lg">
-          <Date dateString={date} />
-        </div>
+        <div className=" text-gray-500 block  md:hidden mb-6 text-lg">
+        <Date dateString={date} />
+      </div>
+       
       </div>
     </>
   )

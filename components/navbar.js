@@ -3,19 +3,20 @@ import Link from "next/link";
 
 function Navbar() {
 	return (
-		<div className="sticky top-0 z-50">
+		<div className='sticky top-0 z-50'>
 			<nav className='bg-white shadow dark:bg-gray-800'>
 				<div className='container px-6 py-3 mx-auto'>
 					<div className='md:flex md:items-center md:justify-between'>
 						<div className='flex items-center justify-between'>
-							<div className='text-xl font-semibold text-gray-700'>
-								<a
-									className='text-xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300'
-									href='#'>
-									Meet the Whytes
-								</a>
-							</div>
-
+							<Link href='/'>
+								<div className='text-xl font-semibold text-gray-700'>
+									<a
+										className='text-xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300'
+										href='#'>
+										Meet the Whytes
+									</a>
+								</div>
+							</Link>
 							<div className='flex md:hidden'>
 								<button
 									type='button'
@@ -41,7 +42,7 @@ function Navbar() {
 									<a
 										href='#'
 										className='px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700'>
-										Travel
+										All Posts
 									</a>
 								</Link>
 								<a

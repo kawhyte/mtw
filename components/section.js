@@ -12,7 +12,7 @@ function Section({
 	author,
 	slug,
 }) {
-	console.log("Title", excerpt);
+
 
 	const image = (
 		<img

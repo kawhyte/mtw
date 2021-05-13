@@ -7,7 +7,7 @@ export default function Intro() {
        MTW.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Our journey in discovering new Food, Hotels and iteresting items.
+        Our journey in discovering and reviewing Food, Hotels and interesting items.
       </h4>
     </section>
   )

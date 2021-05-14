@@ -32,7 +32,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | {CMS_NAME}
                 </title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
@@ -43,6 +43,11 @@ export default function Post({ post, morePosts, preview }) {
                 author={post.author}
                 webLink ={post.webLink}
                 address ={post.address}
+                ratingOverall ={post.ratingOverall}
+                ratingLocation ={post.ratingLocation}
+                ratingCleanliness ={post.ratingCleanliness}
+                ratingService ={post.ratingService}
+                ratingValue ={post.ratingValue}
               />
               <PostBody content={post.body} />
             </article>

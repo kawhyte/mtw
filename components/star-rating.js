@@ -3,49 +3,73 @@ import { render } from "react-dom";
 import { Heart } from "./icons";
 import Stars from "./stars";
 
-const StarRating = () => {
+const StarRating = ({ratingOverall, ratingLocation, ratingCleanliness,ratingService, ratingValue}) => {
+
+	console.log(ratingOverall)
 	const hearts = 3;
 	const maxHearts = 3;
+	let textRating = " "
 
-	const heartIcons = Array(maxHearts)
-		.fill()
-		.map((_, index) => {
-			return <Heart key={index} />;
-		});
+	// const heartIcons = Array(maxHearts)
+	// 	.fill()
+	// 	.map((_, index) => {
+	// 		return <Heart key={index} />;
+	// 	});
+	switch (Math.floor(ratingOverall)) {
+		case 1:
+			textRating ="Meh"
+			break;
+		case 2:
+			textRating ="Ok"
+			break;
+		case 3:
+			textRating ="Good"
+			break;
+		case 4:
+			textRating ="Great"
+			break;
+		case 5:
+			textRating ="Awesome"
+			break;
+	
+		default:
+			textRating ="Hmmmm"
+			break;
+	}
 
 	return (
 		<>  
-        <div className="flex border-b "> 
-			<div className='flex  justify-start items-center align-top mb-8'>
+        <div className="flex flex-col md:flex-row border-b "> 
+			<div className='flex  justify-start items-center align-top mb-8 md:border-r '>
 				<h1 className='text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
-					3.5
+					{ratingOverall}
 				</h1>
 
 				<div className='flex flex-col-reverse ml-3 align-top justify-start '>
 					<div className='flex flex-row justify-start align-middle   items-start '>
-						<Stars stars={3} />
+						<Stars stars={Math.floor(ratingOverall)} />
 					</div>
-					<p className='mx-1 text-xl font-bold'> Good</p>
+					<p className='mx-1 text-xl font-bold'> {textRating}</p>
 				</div>
 			</div>
 
 
           
-			<div className='my-5 pb-4'>
+			<div className='md:my-5 md:ml-6 pb-4'>
 				<div className='flex flex-row'>
-					<Stars stars={5} />
+					<Stars stars={ratingLocation} />
 					<p className='mx-6'>Location</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={1} />
+					<Stars stars={ratingCleanliness} />
 					<p className='mx-6'>Cleanliness</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={3} />
+					<Stars stars={ratingService} />
 					<p className='mx-6'>Service</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={4} />
+					<Stars stars={ratingValue} />
 					<p className='mx-6'>Value</p>
 				</div>
 

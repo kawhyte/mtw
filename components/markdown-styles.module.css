@@ -21,6 +21,7 @@
 
   @apply w-3/4;
     @apply h-3/4;
+    @apply rounded-3xl
 }
 
 .markdown li{

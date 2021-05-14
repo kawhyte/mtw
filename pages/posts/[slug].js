@@ -15,6 +15,8 @@ import { CMS_NAME } from '../../lib/constants'
 import Form from '../../components/form'
 
 export default function Post({ post, morePosts, preview }) {
+
+  console.log("POST", post)
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -39,6 +41,8 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                webLink ={post.webLink}
+                address ={post.address}
               />
               <PostBody content={post.body} />
             </article>

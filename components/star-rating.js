@@ -16,13 +16,13 @@ const StarRating = () => {
 	return (
 		<>  
         <div className="flex border-b "> 
-			<div class='flex  justify-start items-center align-top mb-8'>
+			<div className='flex  justify-start items-center align-top mb-8'>
 				<h1 className='text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 					3.5
 				</h1>
 
 				<div className='flex flex-col-reverse ml-3 align-top justify-start '>
-					<div class='flex flex-row justify-start align-middle   items-start '>
+					<div className='flex flex-row justify-start align-middle   items-start '>
 						<Stars stars={3} />
 					</div>
 					<p className='mx-1 text-xl font-bold'> Good</p>

@@ -18,7 +18,7 @@ import { getAllPostsForHome } from '../lib/api'
 
 
 export default function Index({ allPosts, preview }) {
-
+ console.log( "ALL POST ", allPosts)
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
  // <Hero />
@@ -53,6 +53,7 @@ export default function Index({ allPosts, preview }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            webLink={post.webLink}
         
         />  
       

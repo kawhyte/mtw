@@ -16,7 +16,7 @@ export default function HeroPost({
 		<section className=''>
 			<div className='flex flex-col justify-start items-center'>
 				<div className='mb-8 md:mb-10 relative'>
-					<span class='flex  flex-row-reverse px-3 py-2 mx-2 my-2  text-base rounded-full text-green-600  bg-green-200 absolute '>
+					<span className='flex  flex-row-reverse px-3 py-2 mx-2 my-2  text-base rounded-full text-green-600  bg-green-200 absolute '>
 						<p className=' ml-2 '> MTW Approved</p>
 
 						<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

@@ -4,7 +4,7 @@ import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({ title, coverImage, date, author, webLink, address }) {
 	return (
 		<>
 			<div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
@@ -52,7 +52,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
 				</svg>
 
 				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-					Visit Hotel Website
+					<a href={webLink}> Visit Hotel Website</a>
 				</div>
 			</div>
 			<div className='max-w-2xl flex flex-row '>

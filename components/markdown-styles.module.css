@@ -22,3 +22,8 @@
   @apply w-3/4;
     @apply h-3/4;
 }
+
+.markdown li{
+  @apply list-disc
+  
+}

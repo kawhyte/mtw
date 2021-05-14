@@ -42,6 +42,13 @@ export default {
       title: 'Published at',
       type: 'datetime'
     },
+
+    {
+name: 'webLink',
+type:'string',
+title:'Website Link',
+description: 'Add the website link for the hotel'
+    },
     {
       name: 'body',
       title: 'Body',

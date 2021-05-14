@@ -4,6 +4,7 @@ import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
+import post from "../studio/schemas/post";
 export default function PostHeader({ title, coverImage, date, author, webLink, address }) {
 	return (
 		<>
@@ -33,7 +34,7 @@ export default function PostHeader({ title, coverImage, date, author, webLink, a
 					/>
 				</svg>
 				<div className=' text-gray-500 block   mb-2 ml-2 text-lg'>
-					San Francisco
+					{address ? address : "No address provided"}
 				</div>
 			</div>
 			<div className='max-w-2xl flex flex-row '>
@@ -52,7 +53,7 @@ export default function PostHeader({ title, coverImage, date, author, webLink, a
 				</svg>
 
 				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-					<a href={webLink}> Visit Hotel Website</a>
+				{ webLink ?   <a href={webLink}> Visit Hotel Website</a> :" No adresss provided"  }	
 				</div>
 			</div>
 			<div className='max-w-2xl flex flex-row '>

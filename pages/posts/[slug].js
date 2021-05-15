@@ -13,10 +13,11 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Form from '../../components/form'
+import ProConList from '../../components/pro-con-list'
 
 export default function Post({ post, morePosts, preview }) {
 
-  console.log("POST", post)
+  console.log("Single POST", post)
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -50,6 +51,8 @@ export default function Post({ post, morePosts, preview }) {
                 ratingValue ={post.ratingValue}
               />
               <PostBody content={post.body} />
+
+              <ProConList pros ={post.pros} cons ={post.cons}  />
             </article>
 
             <Comments comments={post.comments} />

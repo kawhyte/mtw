@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProConList({ pros, cons }) {
+function ProConList({ pros, cons ,verdict }) {
 	console.log(cons);
 
 	return (
@@ -112,11 +112,8 @@ function ProConList({ pros, cons }) {
 					</h2>
 
 					<div className='flex flex-col sm:items-start sm:text-left leading-relaxed  items-center -mb-1 space-y-2.5'>
-						<p>
-							For the price we paid of $109.24 (total), we would definitely stay
-							here again, asking for a higher floor room. During summer this
-							hotel costs upwards of $400/night (+tax) which definitely isn't
-							worth it. #hotelstay
+						<p className="font-sans">
+						{verdict}
 						</p>
 					</div>
 				</div>

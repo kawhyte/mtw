@@ -52,7 +52,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.body} />
 
-              <ProConList pros ={post.pros} cons ={post.cons}  />
+              <ProConList pros ={post.pros} cons ={post.cons} verdict ={post.verdict}  />
             </article>
 
             <Comments comments={post.comments} />

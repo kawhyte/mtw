@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+
 module.exports = {
 
   purge: [
@@ -8,6 +11,13 @@ module.exports = {
 ],
   theme: {
     extend: {
+
+
+
+      fontFamily: {
+        sans: ['Space Grotesk', ...defaultTheme.fontFamily.sans],
+      },
+
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',

@@ -49,7 +49,7 @@ function ProConList({ pros, cons ,verdict }) {
 					</div>
 					<div class='p-4 lg:w-1/2 md:w-full'>
 						<div class='flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>
-							<div class='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0'>
+							<div class='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-100 text-gray-500 flex-shrink-0'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='h-8 w-8'
@@ -67,7 +67,7 @@ function ProConList({ pros, cons ,verdict }) {
 									<ul>
 										{cons.map((con, index) => (
 											<li key={con._key} className="my-3 leading-relaxed">
-												<span class='bg-red-100 text-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
+												<span class='bg-gray-100 text-gray-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'
 														className='h-3 w-3'
@@ -91,7 +91,7 @@ function ProConList({ pros, cons ,verdict }) {
 				</div>
 		
 			<div class='flex border-2 my-12 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>
-				<div class='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'>
+				<div class='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-8 w-8'

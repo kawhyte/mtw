@@ -5,67 +5,89 @@ function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<div className='sticky top-0 z-50'>
-		<nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-           
-		  <Link href='/'>
-		  <a
-              className="text-base font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#pablo"
-            >
-              Meet The Whytes
-            </a>
-		</Link>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              
-			  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-			  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-			</svg>
+			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3'>
+				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
+					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
+						<Link href='/'>
+							<div className="flex flex-row justify-center align-middle items-center">
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									className='h-11 w-11 md:h-8 md:w-8 md:mr-2'
+									fill='none'
+									viewBox='0 0 24 24'
+									stroke='currentColor'>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										strokeWidth={2}
+										d='M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z'
+									/>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										strokeWidth={2}
+										d='M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z'
+									/>
+								</svg>
 
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
-                </a>
-              </li>
-              <li className="nav-item">
-			  <Link href='/allposts'> 
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">All Posts</span>
-                </a></Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+								<a className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-black'>
+									Meet The Whytes
+								</a>
+							</div>
+						</Link>
+						<button
+							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+							type='button'
+							onClick={() => setNavbarOpen(!navbarOpen)}>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='h-6 w-6'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth={2}
+									d='M4 6h16M4 12h16M4 18h16'
+								/>
+							</svg>
+						</button>
+					</div>
+					<div
+						className={
+							"lg:flex flex-grow items-center" +
+							(navbarOpen ? " flex" : " hidden")
+						}
+						id='example-navbar-danger'>
+						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
+							<li className='nav-item'>
+								<a
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									href='#pablo'>
+									<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
+									<span className='ml-2'>Home</span>
+								</a>
+							</li>
+							<li className='nav-item'>
+								<Link href='/allposts'>
+									<a
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+										href='#pablo'>
+										<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
+										<span className='ml-2'>All Posts</span>
+									</a>
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
 	);
 }
 
 export default Navbar;
-
-
-
 
 // <nav className='bg-white shadow dark:bg-gray-800'>
 // 				<div className='container px-6 py-3 mx-auto'>

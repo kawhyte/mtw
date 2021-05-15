@@ -4,15 +4,15 @@ import Link from "next/link";
 function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
-		<div className='sticky top-0 z-50'>
-			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3'>
+		<div className='sticky top-0 z-50 border-b bg-white'>
+			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-white mb-3'>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 						<Link href='/'>
 							<div className="flex flex-row justify-center align-middle items-center">
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
-									className='h-11 w-11 md:h-8 md:w-8 md:mr-2'
+									className='h-11 w-11 md:h-8 md:w-8 md:mr-2 fill-current text-pink-500'
 									fill='none'
 									viewBox='0 0 24 24'
 									stroke='currentColor'>
@@ -63,18 +63,18 @@ function Navbar({ fixed }) {
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
 							<li className='nav-item'>
 								<a
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
 									href='#pablo'>
-									<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
+									<i className='fab fa-facebook-square text-lg leading-lg text-black opacity-75'></i>
 									<span className='ml-2'>Home</span>
 								</a>
 							</li>
 							<li className='nav-item'>
 								<Link href='/allposts'>
 									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
 										href='#pablo'>
-										<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
+										<i className='fab fa-facebook-square text-lg leading-lg text-black opacity-75'></i>
 										<span className='ml-2'>All Posts</span>
 									</a>
 								</Link>

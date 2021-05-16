@@ -5,7 +5,6 @@ import Stars from "./stars";
 
 const StarRating = ({ratingOverall, ratingLocation, ratingCleanliness,ratingService, ratingValue}) => {
 
-	console.log(ratingOverall)
 	const hearts = 3;
 	const maxHearts = 3;
 	let textRating = " "

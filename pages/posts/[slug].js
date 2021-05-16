@@ -17,7 +17,7 @@ import ProConList from '../../components/pro-con-list'
 
 export default function Post({ post, morePosts, preview }) {
 
-  console.log("Single POST", post)
+
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />

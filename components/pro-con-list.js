@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProConList({ pros, cons ,verdict }) {
-	console.log(cons);
+
 
 	return (
 		<section class='text-gray-600 body-font'>

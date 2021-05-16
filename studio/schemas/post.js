@@ -55,56 +55,56 @@ export default {
 			title: "Business address",
 		},
 	
-		{
-			title: "Overall Rating",
-			name: "ratingOverall",
-			type: "number",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Location Rating",
-			name: "ratingLocation",
-			type: "number",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Cleanliness Rating",
-			name: "ratingCleanliness",
-			type: "number",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Service Rating",
-			name: "ratingService",
-			type: "number",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Value Rating",
-			name: "ratingValue",
-			type: "number",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			name: "pros",
-			title: "Pros",
-			description:"Add multiple Pros",
-			type: "array",
-			of: [{ type: "pros" }],
-		},
-		{
-			name: "cons",
-			title: "Cons",
-			description:"Add multiple Cons",
-			type: "array",
-			of: [{ type: "cons" }],
-		},
-		{
-			name: "verdict",
-			title: "Verdict",
-			description:"Add your Verdict",
-			type: 'text'
-		},
+		// {
+		// 	title: "Overall Rating",
+		// 	name: "ratingOverall",
+		// 	type: "number",
+		// 	//validation: (Rule) => Rule.required().min(1).max(5),
+		// },
+		// {
+		// 	title: "Location Rating",
+		// 	name: "ratingLocation",
+		// 	type: "number",
+		// 	//validation: (Rule) => Rule.required().min(1).max(5),
+		// },
+		// {
+		// 	title: "Cleanliness Rating",
+		// 	name: "ratingCleanliness",
+		// 	type: "number",
+		// 	//validation: (Rule) => Rule.required().min(1).max(5),
+		// },
+		// {
+		// 	title: "Service Rating",
+		// 	name: "ratingService",
+		// 	type: "number",
+		// 	//validation: (Rule) => Rule.required().min(1).max(5),
+		// },
+		// {
+		// 	title: "Value Rating",
+		// 	name: "ratingValue",
+		// 	type: "number",
+		// 	//validation: (Rule) => Rule.required().min(1).max(5),
+		// },
+		// {
+		// 	name: "pros",
+		// 	title: "Pros",
+		// 	description:"Add multiple Pros",
+		// 	type: "array",
+		// 	of: [{ type: "pros" }],
+		// },
+		// {
+		// 	name: "cons",
+		// 	title: "Cons",
+		// 	description:"Add multiple Cons",
+		// 	type: "array",
+		// 	of: [{ type: "cons" }],
+		// },
+		// {
+		// 	name: "verdict",
+		// 	title: "Verdict",
+		// 	description:"Add your Verdict",
+		// 	type: 'text'
+		// },
 
 		{
 			name: "body",

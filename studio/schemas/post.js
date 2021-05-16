@@ -52,7 +52,7 @@ export default {
 		{
 			name: "webLinks",
 			type: "string",
-			title: "Website Links",
+			title: "Website Links333ee",
 			description: "Add the website link for the hotelssss",
 		},
 		{

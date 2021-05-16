@@ -50,6 +50,12 @@ export default {
 			description: "Add the website link for the hotel",
 		},
 		{
+			name: "webLinks",
+			type: "string",
+			title: "Website Links",
+			description: "Add the website link for the hotelssss",
+		},
+		{
 			name: "address",
 			type: "string",
 			title: "Business address",
@@ -99,12 +105,12 @@ export default {
 		// 	type: "array",
 		// 	of: [{ type: "cons" }],
 		// },
-		{
-			name: "verdict",
-			title: "Verdict",
-			description:"Add your Verdict",
-			type: 'text'
-		},
+		// {
+		// 	name: "verdict",
+		// 	title: "Verdict",
+		// 	description:"Add your Verdict",
+		// 	type: 'text'
+		// },
 
 		{
 			name: "body",
